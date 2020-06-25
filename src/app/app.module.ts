@@ -21,12 +21,12 @@ import { ListToggleComponent } from './list-toggle/list-toggle.component';
     TitleListComponent,
     HeroButtonComponent,
     ItemComponent,
-    ListToggleComponent,
-    HttpClientModule
+    ListToggleComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

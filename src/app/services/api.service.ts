@@ -16,3 +16,4 @@ export class ApiService {
   post(body: any): Promise<any> {
     return this.httpClient.post<any>(this.Url, body).toPromise();
   }
+}
