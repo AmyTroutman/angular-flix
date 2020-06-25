@@ -23,7 +23,7 @@ export class MovieService {
     const response = await this.movieApiService.get('search/multi', query);
 
     this.searchResults.length = 0;
-    this.searchResults.push(...response.result);
+    this.searchResults.push(...response.results);
   }
 
   async loadMovieList() {
