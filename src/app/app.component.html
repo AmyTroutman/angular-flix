@@ -2,20 +2,13 @@
   <header class="Header">
     <app-logo ></app-logo>
     <!-- <Navigation>   --> 
-    <div id="navigation" class="Navigation">
-      <nav>
-        <ul>
-          <li>Browse</li>
-          <li>My list</li>
-          <li>Top picks</li>
-          <li>Recent</li>
-        </ul>
-      </nav>
-    </div>
+    <app-navigation></app-navigation>
     <!--  </Navigation>   --> 
     <app-search-box ></app-search-box>
     <!--  <UserProfile>  -->
-      <app-user-profile></app-user-profile>
+      <div class="UserProfile">
+         <app-user-profile></app-user-profile>
+      </div>
     <!--*  </UserProfile>   -->
   </header>
   <app-hero></app-hero>
