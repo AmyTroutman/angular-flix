@@ -12,7 +12,7 @@ export class SearchBoxComponent implements OnInit {
 
   ngOnInit() {
   }
-  loadSearch(event){
+  loadSearch(event) {
     this.movieService.searchForMovies(event.target.value);
   }
 
