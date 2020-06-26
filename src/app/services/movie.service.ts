@@ -20,13 +20,12 @@ export class MovieService {
   }
 
   async searchForMovies(query: string): Promise<void> {
-    const response = await this.movieApiService.get('search/multi', query);
-
+    const response = await this.movieApiService.get(`search/multi`, query);
     this.searchResults.length = 0;
     this.searchResults.push(...response.results);
   }
 
-  async loadMovieList() {
+  async loadMovieList(): Promise<void> {
     const results = await this.apiService.get();
     this.myMovieList.length = 0;
     this.myMovieList.push(...results);

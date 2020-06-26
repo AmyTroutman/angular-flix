@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ApiService {
 
-  Url = 'https://ce-authenticated-backend.herokuapp.com/';
+  Url = 'https://ce-authenticated-backend.herokuapp.com/publicapi/movies';
   constructor(private httpClient: HttpClient) { }
 
   get(): Promise<any> {
